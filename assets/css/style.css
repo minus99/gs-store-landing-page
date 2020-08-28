@@ -108,6 +108,15 @@ figure figcaption .fig-caption-flex {
 }
 
 /* VİDEO  */
+.full-video{
+    width: 100%;
+    height: 90vh;
+}
+.vjs-big-play-button{
+    top: 50% !important;
+    left: 50% !important;
+}
+
 .video-player {
     position: relative;
 }

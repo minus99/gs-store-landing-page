@@ -4,17 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="assets/css/genel.css">
-    <link rel="stylesheet" href="assets/css/emos.css">
+    <title>TarihBirKereYazıldı</title>
+    <link rel="stylesheet" href="https://cdn.gsstore.org/styles/genel.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
     <div class="entry-row-1 video-player">
-        <video src="https://cdn.gsstore.org/upload/videos/17_MAYIS_UEFA_KUPASI_KLIP.mp4"
-            poster="assets/images/videos/cup.jpg" autobuffer="autobuffer" preload="none" muted="true" playsinline="true"
-            loop="true" class="video is-scrolling"></video>
+
+        <!--
+            <video src="https://cdn.gsstore.org/upload/videos/17_MAYIS_UEFA_KUPASI_KLIP.mp4" poster="assets/images/videos/cup.jpg" autobuffer="autobuffer" preload="none" muted="true" playsinline="true" loop="true" class="video is-scrolling full-video"></video>
+        -->
+
+        <video-js id="my_video_1" class="vjs-default-skin full-video" controls preload="auto" width="640" height="268">
+            <source src="https://huhbofyx.rocketcdn.com/upload/videos/SUPERKUPA_KLIP.mp4/playlist.m3u8" type="application/x-mpegURL">
+        </video-js>
+        
         <div class="video-content">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="77"
                 viewBox="0 0 50 77">
@@ -709,6 +714,10 @@
 
         };
     </script>
+
+    <link href="https://unpkg.com/video.js/dist/video-js.css" rel="stylesheet">
+    <script src="https://unpkg.com/video.js/dist/video.js"></script>
+    <script src="https://unpkg.com/@videojs/http-streaming/dist/videojs-http-streaming.js"></script>
 
     <script type="text/javascript" src="assets/js/jquery-base.min.js"></script>
     <script type="text/javascript" src="assets/js/customEvents-99.1.0.min.js"></script>
