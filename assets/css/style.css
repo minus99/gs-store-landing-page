@@ -433,7 +433,6 @@ figure figcaption .fig-caption-flex {
 }
 
 .entry-row-7 {
-    background-image: url('../images/backgrounds/stadium.jpg');
     background-size: cover;
     position: relative;
     height: 100vh;
@@ -726,3 +725,12 @@ figure figcaption .fig-caption-flex {
         padding-left: 0;
     }
 }
+
+/*
+    lazy images için gerekli
+*/
+picture.prm-media,
+picture.prm-media .lazy-picture,
+[data-background],
+[data-image-src],
+[data-images-src]{ min-height: 1px;display: block; }
