@@ -1,0 +1,91 @@
+﻿/* Seo işlemleri için oluşturulmuştur. h1 tagı için kullanılacaktır. */
+.emos_H1 {
+    font-weight: inherit;
+    font-size: inherit;
+    display: inline;
+}
+
+.emos_invisible {
+    display: none;
+}
+
+.emos_visible {
+    display: block;
+}
+
+.emos_selected, a.emos_selected:hover {
+    color: red;
+}
+
+/* MINUS POPUP */
+#minHider{background:#000; left:0; position:fixed; top:0; z-index:990;}
+.minPpWrp {position:absolute; z-index:999; top:0; left:0; width:100%;}
+.minPp{margin:0 auto; padding:0; position:relative; background:#fff;}
+.minPphdr{position:relative;}
+.minPphdr h4{}
+a.btnMinPpCl{position:absolute; right:-20px; top:0; z-index:3; display:block; height:20px; width:20px; background:#ff0000;}
+.minPpBdy{}
+/*#minHider, #minHiderauthMst {
+    background: #000; left: 0; position: fixed; top: 0; z-index: 990;
+}
+#minHiderauthMst { background: none; }
+
+.minPpWrp, .minPpWrpauthMst {
+    position: absolute; z-index: 999; top: 0; left: 0; width: 100%;
+}
+.minPpWrpauthMst {
+    z-index: 1000;
+}
+.minPp, .minPpauthMst {
+    margin: 0 auto; padding: 0; position: relative; background: #fff;
+}
+.minPphdr, .minPphdrauthMst {
+    position: relative;
+}
+a.btnMinPpCl {
+    position: absolute; right: -20px; top: 0; z-index: 3; display: block; height: 20px; width: 20px; background: #ff0000;
+}
+.minPphdr h4{}
+.minPpBdy, .minPpBdyauthMst {}*/
+/* MINUS POPUP */
+
+/***** MINUS KEYPAD *****/
+/*.minusNumKeyPadWrapper, .minusNumKeyPadWrapper * {-moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box;}*/
+.minusNumKeyPadWrapper .cc-number {width:100%; height:30px;}
+.minusNumKeyPadWrapper a.numPad {background:url(keyboard/img/keyboard.png) no-repeat scroll 0 0; width:26px; height:26px; text-indent:-999em; position:absolute; right:10px; top:50%; margin-top:-13px;}
+
+.minusNumKeyPadWrapper{ min-width: 250px; position:relative; display:inline-block; }
+.minusNumKeyPadWrapper .minusNumKeyPad{ display:none; width:140px; background: #eee;  border: 1px solid #ccc; padding:5px; position:absolute; top:35px; right:10px;}
+.minusNumKeyPadWrapper .minusNumKeyPad.opened{display:block; z-index: 100;}
+.minusNumKeyPadWrapper .minusNumKeyPad ul.keyPadList{list-style:none; padding:0; margin:0;}
+.minusNumKeyPadWrapper .minusNumKeyPad ul.keyPadList > li{float:left; width:29%; margin:2%; text-align:center;}
+.minusNumKeyPadWrapper .minusNumKeyPad ul.keyPadList > li > a {display:block; font-family:Arial; font-size:15px; color:#333; font-weight:bold; text-decoration:none; padding:5px 0; height:30px; line-height:30px; background:#fff; border:1px solid #bbb; text-align: center;}
+.minusNumKeyPadWrapper .minusNumKeyPad ul.keyPadList > li.remove > a {background:url(keyboard/img/remove.png) no-repeat scroll center center #fff; height:30px; text-indent:-999em; display:block;}
+.minusNumKeyPadWrapper .minusNumKeyPad ul.keyPadList > li.shake > a {background:url(keyboard/img/shake.png) no-repeat scroll center center #fff; height:30px; text-indent:-999em; display:block;}
+.minusNumKeyPadWrapper .minusNumKeyPad ul.keyPadList > li.clear {display:none;}
+.minusNumKeyPadWrapper .minusNumKeyPad ul.keyPadList > li.clear > a {background:url(keyboard/img/clear.png) no-repeat scroll center center #fff; width:16px; height:16px; text-indent:-999em; display:inline-block;}
+.div-cc-carttype{ display: inline-block; vertical-align: middle; margin-top: 2px;}
+/***** MINUS KEYPAD *****/
+.divtxtKKARTNO { position: relative;}
+.divtxtKKARTNO .div-cc-carttype { position: absolute; right: -50px; top: 0;}
+
+.urunPaging_pageNavigation a.firstPage, .urunPaging_pageNavigation a.lastPage{display:none;}
+
+/* e-MOS Confirm */
+.emos-confirm *{font-family:Trebuchet MS,Tahoma,Verdana,Arial,sans-serif}
+.emos-confirm{background:#FFF;border-radius:5px;z-index:20000;width:500px!important;min-height:200px!important;overflow:hidden;padding:10px;outline:0}
+.emos-confirm .ui-dialog-titlebar{height:50px;padding:10px;line-height:30px;box-sizing:border-box;background:none;color:#111;border:none;border-bottom:1px solid #DDD;border-radius:0;margin:0 10px;position:relative}
+.emos-confirm .ui-dialog-titlebar button{border:none!important;background:transparent!important;position:absolute;right:.3em;top:50%;width:20px;margin:-10px 0 0;padding:1px;height:20px;cursor:pointer;background:url(/scripts/emosConfirm/images/cancel.png) no-repeat center center!important}
+.emos-confirm .ui-dialog-titlebar .ui-button-text{display:none}
+.emos-confirm .ui-dialog-titlebar .ui-dialog-title{font-size:18px!important;font-weight:600}
+.emos-confirm .ui-dialog-content{padding:20px 30px 60px;text-align:center;font-size: 15px!important; border:none !important}
+.emos-confirm .ui-dialog-buttonpane{position:absolute;bottom:0;left:0;width:100%;background:transparent!important;border:none!important;box-sizing:border-box;padding:0!important}
+.emos-confirm .ui-dialog-buttonpane .ui-dialog-buttonset{padding: 15px 0;text-align: center;}
+.emos-confirm .ui-dialog-buttonpane .ui-dialog-buttonset button{background:#000;width:150px;height:35px;border:none;outline:none!important;margin:5px 10px;font-size:1em;border-radius:4px;display:inline-block;position:relative;padding:0;line-height:normal;vertical-align:middle;text-align:center;overflow:visible;font-weight:600;cursor:pointer}
+.emos-confirm .ui-dialog-buttonpane .ui-dialog-buttonset button:last-child{background:#FFF;border:1px solid #000}
+.emos-confirm .ui-dialog-buttonpane .ui-dialog-buttonset button.ui-state-hover{border:none!important}
+.emos-confirm .ui-dialog-buttonpane .ui-dialog-buttonset button:last-child.ui-state-hover{border:1px solid #000!important}
+.emos-confirm .ui-dialog-buttonpane .ui-dialog-buttonset button:last-child span{color:#111}
+.emos-confirm .ui-dialog-buttonpane .ui-dialog-buttonset button span{color:#FFF}
+.ui-widget-overlay{position:fixed !important;top:0;left:0;width:100%;height:100%;z-index:10000;background:rgba(0,0,0,0.6)!important}
+/* e-MOS Confirm */
