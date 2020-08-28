@@ -619,3 +619,101 @@ figure figcaption .fig-caption-flex {
 .showcase .showcase-price.discount-product span {
     color: #a90534;
 }
+
+@media screen and (max-width: 1025px) {
+    .video-container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .desktop-paddings {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .entry-row-5 .entry-row-5-container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .entry-row-1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    video {
+        order: 2;
+    }
+
+    .video-player .video-content {
+        position: relative;
+        order: 1;
+        background-color: #a90534;
+        padding-top: 93px;
+        padding-bottom: 93px;
+    }
+
+    .video-player .video-content a h1 {
+        font-size: 25px;
+    }
+
+    .video-player .video-content svg {
+        margin: 0 auto 15px auto;
+    }
+
+    .entry-row-2 .hero-text {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .entry-row-2 .flexible-list {
+        flex-direction: column;
+    }
+
+    .entry-row-2 .flexible-list .flex-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .entry-row-2 .sub-text {
+        display: none;
+    }
+
+    figure figcaption .fig-caption-container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .entry-row-3 figure figcaption .fig-caption-flex .fig-caption-flex-item:last-child,
+    .entry-row-3 figure figcaption .fig-caption-flex .fig-caption-flex-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .entry-row-3 figure figcaption .fig-caption-flex .fig-caption-flex-item:last-child {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000 24%, #000000 50%);
+    }
+
+    .entry-row-3 figure:first-child figcaption { 
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .entry-row-3 figure figcaption p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    figure figcaption small {
+        font-size: 14px;
+    }
+
+    .image-slider-wrapper {
+        margin-top: 0;
+        padding-top: 0;
+        background: #000000;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 0;
+    }
+}
