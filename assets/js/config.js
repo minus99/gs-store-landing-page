@@ -14,8 +14,8 @@ var SITE_CONFIG = {
         */
         urlSelected: [
             { uri: '/uyeIslem/favorilistem.aspx', elm: '[rel="ems-member-favorite"]', cls: 'selected' },
-            { uri: '/favorilerim/', elm: '[rel="ems-member-favorite"]'},
-            { uri: '/my-favorites/', elm: '[rel="ems-member-favorite"]'},
+            { uri: '/favorilerim/', elm: '[rel="ems-member-favorite"]' },
+            { uri: '/my-favorites/', elm: '[rel="ems-member-favorite"]' },
             { uri: '/uyeIslem/marketdedektif.aspx', elm: '[rel="ems-member-follow-list"]' },
             { uri: '/uyeIslem/siparistakip.aspx', elm: '[rel="ems-member-order"]' },
             { uri: '/siparislerim/', elm: '[rel="ems-member-order"]' },
@@ -31,7 +31,7 @@ var SITE_CONFIG = {
             { uri: '/my-coupon/', elm: '[rel="ems-member-ticket"]' },
             { uri: '/uyeIslem/odemeCeki.aspx', elm: '[rel="ems-member-gift-card"]' },
             { uri: '/gift-kartlarim/', elm: '[rel="ems-member-gift-card"]' },
-            { uri: '/my-gift-card/', elm: '[rel="ems-member-gift-card"]' },            
+            { uri: '/my-gift-card/', elm: '[rel="ems-member-gift-card"]' },
             { uri: '/uyeBilgi/uyeBilgi.aspx', elm: '[rel="ems-member-info"]' },
             { uri: '/kisisel-bilgilerim/', elm: '[rel="ems-member-info"]' },
             { uri: '/my-personel-informations/', elm: '[rel="ems-member-info"]' },
@@ -51,11 +51,11 @@ var SITE_CONFIG = {
             { uri: '/uyeIslem/kuponlarim.aspx?tp=2&spr=2', elm: '.btnKuponAcikKuponlar' },
             { uri: '/uyeIslem/kuponlarim.aspx?tp=2&spr=4', elm: '.btnKuponKapanan' },
         ],
-        
+
         /* 
             form yönetimi 
         */
-        form: [            
+        form: [
             /* yeni adres */
             {
                 'el': '[id$="lbfUYA_AD"]',
@@ -114,13 +114,13 @@ var SITE_CONFIG = {
             },
             {
                 'el': '[id$="txtUYE_DOGUMTARIHI"]',
-                'attr': {  'required': 'true', 'autocomplete': 'off', /*'readonly': 'true'*/ },
+                'attr': { 'required': 'true', 'autocomplete': 'off', /*'readonly': 'true'*/ },
                 'mask': '99.99.9999',
             },
 
             {
                 'el': '[id$="lbfUYE_DOGUMTARIHI"]',
-                'attr': {  'class': 'zorunluFont' },
+                'attr': { 'class': 'zorunluFont' },
             },
 
             {
@@ -141,7 +141,7 @@ var SITE_CONFIG = {
             /* XML Form */
             {
                 'el': 'input.fc-int',
-                'regex': 'typ2' 
+                'regex': 'typ2'
             },
             {
                 'el': 'input.fc-string',
@@ -206,7 +206,7 @@ var SITE_CONFIG = {
             ID: '.ems-prdd-gallery',
             'prop': {
                 'template': {
-                    'wrp': '<div class="zoom-gallery"><div class="zoom-gallery-inner"><div class="zoom-gallery-header"><span class="title">{{title}}</span><a href="javascript:void(0);" class="close-btn sub-close">{{closeButton}}</a></div>{{large}}{{thumbs}}<div class="zoom-gallery-footer">'+ ($('[data-target="[rel=\'lbfZoomFooter\']"]').html() || 'büyütmek için çift tıkla') +'</div></div></div>',
+                    'wrp': '<div class="zoom-gallery"><div class="zoom-gallery-inner"><div class="zoom-gallery-header"><span class="title">{{title}}</span><a href="javascript:void(0);" class="close-btn sub-close">{{closeButton}}</a></div>{{large}}{{thumbs}}<div class="zoom-gallery-footer">' + ($('[data-target="[rel=\'lbfZoomFooter\']"]').html() || 'büyütmek için çift tıkla') + '</div></div></div>',
                     'large': '<div class="large-wrapper swiper-container swiper-container-light slider-navigation slider-pagination"><div class="swiper-inner"><ul class="swiper-wrapper">{{li}}</ul></div><div class="swiper-button-prev zoom-swiper-large-button-prev">{{largeButtonPrev}}</div><div class="swiper-button-next zoom-swiper-large-button-next">{{largeButtonNext}}</div><div class="swiper-pagination"></div></div>',
                     'largeLi': '<li data-order="{{order}}" class="swiper-slide"><div class="swiper-zoom-container"><img data-src="{{src}}" class="swiper-lazy"></div><div class="swiper-lazy-preloader"></div></li>',
                     'thumbs': '<div class="thumbs-wrapper swiper-container"><div class="swiper-inner"><ul class="swiper-wrapper">{{li}}</ul></div><div class="swiper-button-prev zoom-swiper-thumb-button-prev">{{thumbButtonPrev}}</div><div class="swiper-button-next zoom-swiper-thumb-button-next">{{thumbButtonNext}}</div></div>',
@@ -519,6 +519,31 @@ var SITE_CONFIG = {
                 },
             },
 
+            widgetHalf: { 
+                paginationClickable: true, 
+                preloadImages: false, 
+                lazyLoading: true, 
+                slidesPerView: 1, 
+                spaceBetween: 60, 
+                loop: false, 
+                pagination: { 
+                    el: '.swiper-pagination', 
+                    clickable: true, 
+                }, 
+                
+                navigation: { 
+                    nextEl: '.swiper-button-next', 
+                    prevEl: '.swiper-button-prev', 
+                }, 
+
+                breakpoints: { 
+                    1024: { 
+                        slidesPerView: 1.1, 
+                        spaceBetween: 10, 
+                    }, 
+                }, 
+            },
+
             widgetStoryCentered: {
                 paginationClickable: true,
                 preloadImages: false,
@@ -581,7 +606,7 @@ var SITE_CONFIG = {
                 loop: true,
                 loopAdditionalSlides: 20,
                 loopedSlides: 20,
-                
+
                 pagination: {
                     el: '.swiper-pagination',
                     clickable: true,
