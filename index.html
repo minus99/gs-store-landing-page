@@ -36,7 +36,7 @@
             </h2>
 
             <div class="desktop-paddings">
-                <div class="desktop-paddings">
+                <div class="desktop-paddings padding-X-md-0">
                     <p class="video-description text-center">
                         25 Ağustos 2000'de Galatasaray ve Türk Futbolu belki de bir daha yaşayamayacağı bir zafere imza
                         attı. Aslan, dünya devi Real Madrid'i UEFA Süper kupa finalinde 2-1 yenmeyi başardı ve Süper
@@ -46,7 +46,7 @@
             </div>
 
             <div class="position-relative">
-                <div class="flexible-list desktop-paddings">
+                <div class="flexible-list desktop-paddings padding-X-md-0">
                     <div class="flex-item">
                         <figure>
                             <img src="assets/images/fatih-terim.png" alt="UEFA KUPASI">
@@ -82,8 +82,8 @@
 
     <section class="entry-row-3 color-white">
         <figure>
-            <img src="assets/images/cup-story.jpg" alt="17 MAYIS 2000">
             <small class="font-weight-700">17 Mayıs 2000</small>
+            <img src="assets/images/cup-story.jpg" alt="17 MAYIS 2000">
             <p>
                 İlk yarıya Galatasaray başladı. Roberto Carlos sol kanattan geldi ve çektiği şut
                 ortadaki Raul'un
@@ -98,50 +98,39 @@
                 <div class="swiper-inner">
                     <ul class="swiper-wrapper">
                         <li class="swiper-slide type-img">
+                            <div class="slide-img">
+                                <img src="assets/images/image-slide-2.png" alt="Kupa'nın Hikayesi">
+                                
+                            </div>
                             <div class="slide-content">
-                                <div class="slide-img">
-                                    <figure>
-                                        <img src="assets/images/image-slide-1.png" alt="Kupa'nın Hikayesi">
-                                        <figcaption>
-                                            <p>
-                                                Uzatma anlarının 12. dakikasında sahneye yine Mario Jardel çıktı ve
-                                                attığı altın golle kupayı türkiye ye getirdi.
-                                            </p>
-                                        </figcaption>
-                                    </figure>
-                                </div>
+                                <p>
+                                    Uzatma anlarının 12. dakikasında sahneye yine Mario Jardel çıktı ve
+                                    attığı altın golle kupayı türkiye ye getirdi.
+                                </p>
                             </div>
                         </li>
 
                         <li class="swiper-slide type-img">
-                            <div class="slide-content">
-                                <div class="slide-img">
-                                    <img src="assets/images/image-slide-2.png" alt="Kupa'nın Hikayesi">
-                                </div>
+                            <div class="slide-img">
+                                <img src="assets/images/image-slide-1.png" alt="Kupa'nın Hikayesi">    
                             </div>
                         </li>
 
                         <li class="swiper-slide type-img">
-                            <div class="slide-content">
-                                <div class="slide-img">
-                                    <img src="assets/images/image-slide-3.png" alt="Kupa'nın Hikayesi">
-                                </div>
+                            <div class="slide-img">
+                                <img src="assets/images/image-slide-3.png" alt="Kupa'nın Hikayesi">
                             </div>
                         </li>
 
                         <li class="swiper-slide type-img">
-                            <div class="slide-content">
-                                <div class="slide-img">
-                                    <img src="assets/images/image-slide-2.png" alt="Kupa'nın Hikayesi">
-                                </div>
+                            <div class="slide-img">
+                                <img src="assets/images/image-slide-2.png" alt="Kupa'nın Hikayesi">
                             </div>
                         </li>
 
                         <li class="swiper-slide type-img">
-                            <div class="slide-content">
-                                <div class="slide-img">
-                                    <img src="assets/images/image-slide-3.png" alt="Kupa'nın Hikayesi">
-                                </div>
+                            <div class="slide-img">
+                                <img src="assets/images/image-slide-3.png" alt="Kupa'nın Hikayesi">
                             </div>
                         </li>
                     </ul>
@@ -153,23 +142,13 @@
         </div>
 
         <figure>
+            <small>17 Mayıs 2000</small>
             <img src="assets/images/cup-story-2.jpg" alt="Süper Kupa">
-            <figcaption>
-                <div class="fig-caption-container">
-                    <div class="fig-caption-flex">
-                        <div class="fig-caption-flex-item">
-                            <small class="font-weight-700">17 Mayıs 2000</small>
-                        </div>
-                        <div class="fig-caption-flex-item">
-                            <p>
-                                İkinci yarıya Real Madrid başladı. Roberto Carlos'a yapılan faul atışını kullandı ve
-                                Taffarel topu kurtardı. Geremi, Galatasaray kalesinin içinde şut attı ve top çok az bir
-                                mesafeden auta çıktı.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </figcaption>
+            <p>
+                İkinci yarıya Real Madrid başladı. Roberto Carlos'a yapılan faul atışını kullandı ve
+                Taffarel topu kurtardı. Geremi, Galatasaray kalesinin içinde şut attı ve top çok az bir
+                mesafeden auta çıktı.
+            </p>
         </figure>
     </section>
 
@@ -221,8 +200,11 @@
         <h2>Uefa finali ve Süper kupa biletini oluştur</h2>
 
         <div class="entry-row-5-container ticket-customizer">
-            
-            <input id="tname" type="text" name="name" placeholder="Adını ve Soyadını Yaz" required>
+            <ul class="flexible-list">
+                <li class="flex-item">
+                    <input id="tname" type="text" name="name" placeholder="Adını ve Soyadını Yaz" maxlength="15" required> 
+                </li>
+            </ul>
 
 
             <div class="swiper-container" data-swiper="widgetAuto">
@@ -526,7 +508,7 @@
             for (var i = 0; i < images.length; ++i) {
               if (images[i] != null) {
                 var ctx = _this.context[i];
-                ctx.font = "50px Arial"
+                ctx.font = "40px Arial"
                 ctx.drawImage(images[i], 0, 0);
                 if (i == 0)
                   ctx.fillText(_this.name, 1000 - ctx.measureText(_this.name).width * .5, 850);
