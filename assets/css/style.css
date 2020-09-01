@@ -764,6 +764,11 @@ figure figcaption strong {
         padding-right: 20px;
     }
 
+    .entry-row-5 h2 {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
     .entry-row-2 .flexible-list .flex-item:first-child figure figcaption {
         left: auto;
         right: 20px;
